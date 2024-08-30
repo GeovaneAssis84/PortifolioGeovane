@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Virtual Geovane</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px 50px 1fr 70px;
+            grid-gap: 5px 10px;
+        }
+
+        .topo {
+            grid-area: 1/1/2/3;
+        }
+
+        .menu {
+            grid-area: 2/2/3/3;
+        }
+
+        .principal {
+            grid-area: 3/2/4/3;
+        }
+
+        .esquerdo {
+            grid-area: 2/1/4/2;
+        }
+
+        .rodape {
+            grid-area: 4/1/5/3;
+        }
+
+       * {
+            /*font-size: 10px;*/
+            box-sizing: border-box;
+        }
+
+         body {
+            background: white;
+            color: #333;
+            margin: 40px;
+        }
+
+        .container>* {
+            padding: 10px;
+           font: sans-serif;
+            color: white;
+        }
+
+        .topo,
+        .rodape {
+            background: #5757be;
+            font: 70% sans-serif;
+            text-align: center;
+        }
+
+        .menu {
+            background: #939190;
+            font: 70% sans-serif;
+            text-align: center;
+        }
+
+        .principal {
+            background: #636262;
+        }
+
+        .esquerdo {
+            background: #7b817d;
+        }
+
+        .esquerdo ul {
+            list-style-type: none;
+        }
+
+        .esquerdo ul li {
+            margin-bottom: 15px;
+        }
+
+        .esquerdo ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .esquerdo ul li a:hover {
+            background-color: #555;
+            padding-left: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="topo">
+            <h2>Currículo Virtual Geovane</h2>
+        </header>
+
+        <nav class="menu">
+            <h2>Quem Sou?</h2>
+        </nav>
+
+        <main class="principal">
+            <h3>Geovane Deleski Assis </h3>
+                <ul>
+                    <li>Nascido em 1984</li>
+                    <li>Cristão, casado e pai de duas filhas</li>
+                    <li>Engenheiro Eletricista</li>
+                    <li>Residindo na cidade de Guaíba no Rio Grande do Sul</li>
+                    <li>Entre os principais hobbies, estão brincar com as filhas, jogar futebol e olhar filmes</li> 
+                    <li>Torcedor do time de futebol Internacional</li>               
+                </ul>
+
+        </main>
+        <aside class="esquerdo">
+            <ul>
+                <li><a href="index.html">Quem Sou?</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </aside>
+   
+        <footer class="rodape">
+            <h4>Desenvolvido para disciplina de Fundamentos da Programação WEB</h4>
+        </footer>
+    </div>
+
+</body>
+
+</html>
